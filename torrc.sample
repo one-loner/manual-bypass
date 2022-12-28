@@ -1,0 +1,14 @@
+BridgeRelay 1
+
+SocksPort 9050 # Default: Bind to localhost:9050 for local connections.
+
+ORPort 9052
+PublishServerDescriptor 0 
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportListenAddr obfs4 ExternalIP:port
+
+ExtORPort auto
+
+ContactInfo address@email.com
+
+Nickname PickANickname
